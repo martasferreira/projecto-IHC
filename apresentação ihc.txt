@@ -1,0 +1,36 @@
+Estrutura:
+- problema
+- heuristica que viola
+- Severidade
+- possivel solução
+
+
+11.
+
+É possivel navegar de um ecrã com um menu à direita para outro ecrã com o menu à esquerda, o que torna confusa a experiência de utilização.
+Torna-se cansativo cada vez que se muda o ecrã andar à procura de onde está o menu, em vez de lá chegar automaticamente por intuição ou habito.
+
+Viola completamente a heuristica a consistência
+Severidade 2 porque não é muito frequente e acontece principalmente em partes da aplicação menos usadas.
+
+12.
+
+Ao fazer um pedido de ligação a um utilizador, não existe a opção de andar para trás na ação e retirar esse pedido.
+
+A única forma de resolver, é ir a um menu de gerir pedidos onde estão todos os pedidos recebidos e enviados. 
+Esse menu encontra-se junto de um pedido recebido o que leva a pensar que apenas gere os pedidos recebidos.
+
+Viola consistência e standards porque em todas as outras plataformas (por exemplo instagram), ao enviar um pedido de amigo,
+posso voltar a carregar no mesmo botão para cancelar esse pedido
+Viola flexibility and efficenty of use porque tenho de ir procurar um menu que não sei que existe para desfazer uma ação
+muito simples que possivelmente fiz não intencionalmente.
+Severidade 4 por ser tão complicado resolver o problema de uma forma alternativa
+
+14.
+Linkedin é uma aplicação ainda bastante extensa o que significa que tem muito mais sitios onde errar.
+Há medida que a aplicação foi crescendo foram-se aplicando padrões de interação diferentes o que implica graves discrepancias
+entre diferentes partes da aplicação
+Ainda ha muitos problemas
+O site deveria ser consistente no uso de normas para a interação do user.
+Depois de usar a platarforma e ganhar o habito a navegação torna-se mais simples, mas para novos utilizadores,
+estes problemas que referimos tornam a experiência frustrante e pouco eficiente
