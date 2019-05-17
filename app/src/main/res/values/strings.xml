@@ -58,7 +58,6 @@
         <item>Fev</item>
         <item>Mar</item>
         <item>Abr</item>
-        <item>Abr</item>
         <item>Mai</item>
         <item>Jun</item>
         <item>Jul</item>
@@ -89,6 +88,8 @@
         <item>João Abrantes</item>
         <item>André Catarino</item>
     </string-array>
+    <string name="title_activity_main7">Main7Activity</string>
+    <string name="title_activity_main8">Main8Activity</string>
 
 
 </resources>
