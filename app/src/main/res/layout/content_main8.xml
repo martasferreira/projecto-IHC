@@ -9,6 +9,7 @@
     tools:showIn="@layout/activity_main8">
 
     <ListView
+        android:id="@+id/tarefas"
         android:layout_width="378dp"
         android:layout_height="433dp"
         android:layout_marginEnd="16dp"
@@ -16,18 +17,22 @@
         tools:layout_editor_absoluteY="217dp" />
 
     <AutoCompleteTextView
-        android:id="@+id/autoCompleteTextView"
-        android:layout_width="292dp"
-        android:layout_height="55dp"
+        android:id="@+id/actv1"
+        android:layout_width="266dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="44dp"
         android:hint="Nome do paciente"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="44dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="33dp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="54dp"
-        android:layout_height="53dp"
-        app:srcCompat="@android:drawable/ic_search_category_default"
-        tools:layout_editor_absoluteX="285dp"
-        tools:layout_editor_absoluteY="44dp" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="62dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
 </android.support.constraint.ConstraintLayout>
