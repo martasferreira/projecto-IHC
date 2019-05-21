@@ -89,6 +89,8 @@
         <item>João Abrantes</item>
         <item>André Catarino</item>
     </string-array>
+    <string name="title_activity_show">ShowActivity</string>
+    <string name="title_activity_dar_tarefa">DarTarefa</string>
 
 
 </resources>
