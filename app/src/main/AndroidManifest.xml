@@ -10,9 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".TarefaListActivity"
+            android:label="@string/title_tarefa_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".TarefaDetailActivity"
+            android:label="@string/title_tarefa_detail"
+            android:parentActivityName=".TarefaListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lasr.projecto_ihc.TarefaListActivity" />
+        </activity>
+        <activity
             android:name=".DarTarefa"
             android:label="@string/title_activity_dar_tarefa"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ShowActivity"
             android:label="@string/title_activity_show"

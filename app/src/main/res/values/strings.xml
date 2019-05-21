@@ -91,6 +91,8 @@
     </string-array>
     <string name="title_activity_show">ShowActivity</string>
     <string name="title_activity_dar_tarefa">DarTarefa</string>
+    <string name="title_tarefa_list">Tarefas</string>
+    <string name="title_tarefa_detail">Tarefa Detail</string>
 
 
 </resources>
