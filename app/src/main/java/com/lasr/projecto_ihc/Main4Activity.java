@@ -1,5 +1,6 @@
 package com.lasr.projecto_ihc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -7,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 
@@ -59,8 +61,18 @@ public class Main4Activity extends AppCompatActivity {
         ArrayList<String> disponibilidade = preencherDados();
 
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, disponibilidade);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_single_choice, disponibilidade);
         lista.setAdapter(arrayAdapter);
+
+
+        Button button3 =(Button) findViewById(R.id.button3);
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main4Activity.this, Main9Activity.class);
+                startActivity(it);
+            }
+        });
 
 
     }
