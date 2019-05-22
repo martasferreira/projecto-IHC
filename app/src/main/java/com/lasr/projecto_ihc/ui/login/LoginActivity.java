@@ -3,6 +3,7 @@ package com.lasr.projecto_ihc.ui.login;
 import android.app.Activity;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
@@ -18,6 +19,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.lasr.projecto_ihc.Main3Activity;
+import com.lasr.projecto_ihc.Main5Activity;
+import com.lasr.projecto_ihc.Main8Activity;
+import com.lasr.projecto_ihc.MainActivity;
 import com.lasr.projecto_ihc.R;
 import com.lasr.projecto_ihc.ui.login.LoginViewModel;
 import com.lasr.projecto_ihc.ui.login.LoginViewModelFactory;
@@ -108,9 +113,28 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                loadingProgressBar.setVisibility(View.VISIBLE);
-                loginViewModel.login(usernameEditText.getText().toString(),
-                        passwordEditText.getText().toString());
+
+                if( usernameEditText.getText().toString().equals("sec_maria") && passwordEditText.getText().toString().equals("maria123")){
+
+                    Intent it = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(it);
+                }
+                else if(usernameEditText.getText().toString().equals("dr_eduardo") && passwordEditText.getText().toString().equals("eduardo123")){
+                    Intent it = new Intent(LoginActivity.this, Main5Activity.class);
+                    startActivity(it);
+                }
+
+                else if(usernameEditText.getText().toString().equals("enf_joana") && passwordEditText.getText().toString().equals("joana123")){
+                    Intent it = new Intent(LoginActivity.this, Main8Activity.class);
+                    startActivity(it);
+                }
+
+
+
+
+                //loadingProgressBar.setVisibility(View.VISIBLE);
+                //loginViewModel.login(usernameEditText.getText().toString(),
+                //       passwordEditText.getText().toString());
             }
         });
     }

@@ -69,8 +69,10 @@ public class Main4Activity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
-                Intent intent = new Intent(Main4Activity.this, VistaConsulta.class);
-                startActivity(intent);
+
+                    Intent intent = new Intent(Main4Activity.this, Main9Activity.class);
+                    startActivity(intent);
+
             }
         });
 
