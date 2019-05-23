@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -23,6 +25,24 @@ public class Main6Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton6);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main6Activity.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });
+
+        FloatingActionButton back = (FloatingActionButton) findViewById(R.id.floatingActionButton7);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main6Activity.this, Main5Activity.class);
+                startActivity(it);
+            }
+        });
 
         ListView lista = (ListView) findViewById(R.id.pacientes);
 

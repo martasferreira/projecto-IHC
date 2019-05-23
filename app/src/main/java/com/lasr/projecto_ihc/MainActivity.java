@@ -10,7 +10,10 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        final AutoCompleteTextView actv = findViewById(R.id.actv);
         String[] countries = getResources().getStringArray(R.array.utentes);
 
         AutoCompleteTextView editText = findViewById(R.id.actv);
@@ -41,12 +44,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });
+
         Button button3 =(Button) findViewById(R.id.button3);
 
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(MainActivity.this, Main4Activity.class);
-                startActivity(it);
+                if (actv.getText().toString().equals("Joana Albuquerque")) {
+                    Intent it = new Intent(MainActivity.this, Main4Activity.class);
+                    startActivity(it);
+                }
             }
         });
 
@@ -54,8 +68,10 @@ public class MainActivity extends AppCompatActivity {
 
         button5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(MainActivity.this, Main3Activity.class);
-                startActivity(it);
+                if (actv.getText().toString().equals("Joana Albuquerque")) {
+                    Intent it = new Intent(MainActivity.this, Main3Activity.class);
+                    startActivity(it);
+                }
             }
         });
 

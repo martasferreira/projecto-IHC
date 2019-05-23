@@ -8,31 +8,50 @@
     tools:context=".Main8Activity"
     tools:showIn="@layout/activity_main8">
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
     <ListView
         android:id="@+id/tarefas"
         android:layout_width="378dp"
         android:layout_height="433dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="217dp" />
+        tools:layout_editor_absoluteY="237dp" />
 
     <AutoCompleteTextView
         android:id="@+id/actv1"
         android:layout_width="266dp"
         android:layout_height="54dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="124dp"
         android:hint="Nome do paciente"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="33dp" />
+        tools:layout_editor_absoluteX="31dp" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="62dp"
         android:layout_height="54dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="36dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="As suas tarefas: "
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="210dp" />
 
 </android.support.constraint.ConstraintLayout>

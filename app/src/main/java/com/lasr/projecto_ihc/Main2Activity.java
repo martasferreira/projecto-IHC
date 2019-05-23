@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
+
 public class Main2Activity extends AppCompatActivity {
 
     @Override
@@ -17,6 +19,15 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton3);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main2Activity.this, MainActivity.class);
+                startActivity(it);
+            }
+        });
 
 
         Button button6 =(Button) findViewById(R.id.button6);
@@ -27,6 +38,7 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
 
 
     }

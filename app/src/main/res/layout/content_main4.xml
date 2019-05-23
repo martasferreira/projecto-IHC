@@ -8,12 +8,23 @@
     tools:context=".Main4Activity"
     tools:showIn="@layout/activity_main4">
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="57dp"
         android:layout_height="27dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="176dp"
         android:text="Data:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +34,7 @@
         android:layout_width="57dp"
         android:layout_height="27dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="108dp"
         android:text="Médico:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -33,7 +44,7 @@
         android:layout_width="120dp"
         android:layout_height="26dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="320dp"
         android:text="Disponibilidade:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,7 +53,7 @@
         android:id="@+id/spinner1"
         android:layout_width="329dp"
         android:layout_height="36dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="124dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,7 +62,7 @@
         android:id="@+id/spinner2"
         android:layout_width="130dp"
         android:layout_height="40dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="220dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,7 +72,7 @@
         android:id="@+id/spinner4"
         android:layout_width="107dp"
         android:layout_height="40dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="220dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,7 +83,7 @@
         android:layout_width="94dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="220dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -81,22 +92,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="284dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="276dp"
         android:text="Procurar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
         android:id="@+id/disponibilidade"
-        android:layout_width="361dp"
-        android:layout_height="327dp"
+        android:layout_width="350dp"
+        android:layout_height="319dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.82" />
+        app:layout_constraintVertical_bias="0.891" />
 
 
 </android.support.constraint.ConstraintLayout>

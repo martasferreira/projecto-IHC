@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
+
 public class Main5Activity extends AppCompatActivity {
 
     @Override
@@ -20,7 +22,14 @@ public class Main5Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton5);
 
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main5Activity.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });
 
         Spinner DaysSpinner =  (Spinner) findViewById(R.id.spinner);
 

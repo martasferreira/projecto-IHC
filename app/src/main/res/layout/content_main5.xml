@@ -8,6 +8,17 @@
     tools:context=".Main5Activity"
     tools:showIn="@layout/activity_main5">
 
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="94dp"

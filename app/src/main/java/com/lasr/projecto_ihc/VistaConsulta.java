@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
+
 public class VistaConsulta extends AppCompatActivity {
 
     @Override

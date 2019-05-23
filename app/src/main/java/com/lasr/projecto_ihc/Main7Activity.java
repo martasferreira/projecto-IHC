@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
+
 import java.util.ArrayList;
 
 public class Main7Activity extends AppCompatActivity {
@@ -22,6 +24,14 @@ public class Main7Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton10);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main7Activity.this, VistaConsulta.class);
+                startActivity(it);
+            }
+        });
 
         ListView lista = (ListView) findViewById(R.id.historico);
 

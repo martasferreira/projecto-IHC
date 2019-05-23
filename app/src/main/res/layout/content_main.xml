@@ -18,17 +18,17 @@
         android:hint="Nome do Utente"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.267"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.305" />
+        app:layout_constraintVertical_bias="0.336" />
 
     <ImageButton
         android:id="@+id/buttonAdd"
-        android:layout_width="60dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_input_add" />
@@ -57,14 +57,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="39dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="296dp"
-        android:layout_marginTop="196dp"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_search_category_default" />
+        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
 
 </android.support.constraint.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.lasr.projecto_ihc;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -9,6 +10,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ListView;
+
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
 
 import java.util.ArrayList;
 
@@ -20,6 +23,15 @@ public class Main8Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main8);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton8);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main8Activity.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });
 
 
         String[] countries = getResources().getStringArray(R.array.utentes);

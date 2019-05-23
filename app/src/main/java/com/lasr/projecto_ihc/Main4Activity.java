@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
+
 import java.time.Month;
 import java.util.ArrayList;
 
@@ -25,6 +27,14 @@ public class Main4Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton4);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main4Activity.this, MainActivity.class);
+                startActivity(it);
+            }
+        });
 
         Spinner DoctorSpinner =  (Spinner) findViewById(R.id.spinner1);
 
@@ -70,12 +80,11 @@ public class Main4Activity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
 
-                    Intent intent = new Intent(Main4Activity.this, Main9Activity.class);
-                    startActivity(intent);
+                Intent intent = new Intent(Main4Activity.this, Main9Activity.class);
+                startActivity(intent);
 
             }
         });
-
 
 
     }
@@ -85,7 +94,7 @@ public class Main4Activity extends AppCompatActivity {
         ArrayList<String> dados = new ArrayList<String>();
         dados.add(" 9h: Maria Moreira");
         dados.add("10h: Vago");
-        dados.add("11h: Joana Albuquerque");
+        dados.add("11h: Mariana Sequeira");
         dados.add("12h: Amelia Fonseca");
         dados.add("13h: Vago");
         dados.add("14h: Camila Marques");
