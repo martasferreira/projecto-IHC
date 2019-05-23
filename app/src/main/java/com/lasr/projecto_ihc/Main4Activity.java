@@ -67,44 +67,16 @@ public class Main4Activity extends AppCompatActivity {
         YearsSpinner.setAdapter(myAdapter3);
 
 
-        ListView lista = (ListView) findViewById(R.id.disponibilidade);
+        Button button8 =(Button) findViewById(R.id.button8);
 
-        ArrayList<String> disponibilidade = preencherDados();
-
-
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, disponibilidade);
-        lista.setAdapter(arrayAdapter);
-
-        lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position,
-                                    long id) {
-
-                Intent intent = new Intent(Main4Activity.this, Main9Activity.class);
-                startActivity(intent);
-
+        button8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main4Activity.this, Main10Activity.class);
+                startActivity(it);
             }
         });
-
-
     }
 
-    private ArrayList<String> preencherDados() {
-
-        ArrayList<String> dados = new ArrayList<String>();
-        dados.add(" 9h: Maria Moreira");
-        dados.add("10h: Vago");
-        dados.add("11h: Mariana Sequeira");
-        dados.add("12h: Amelia Fonseca");
-        dados.add("13h: Vago");
-        dados.add("14h: Camila Marques");
-        dados.add("15h: Carolina Santos");
-        dados.add("16h: Vago");
-        dados.add("17h: João Mendes");
-        dados.add("18h: André Catarino");
-        dados.add("19h: Rui Melo");
-        return dados;
-    }
-}
+   }
 
 
