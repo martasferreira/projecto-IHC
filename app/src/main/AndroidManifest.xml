@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Main12Activity"
+            android:label="@string/title_activity_main12"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".Main11Activity"
             android:label="@string/title_activity_main11"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Main10Activity"
             android:label=""
@@ -20,7 +24,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Main3Activity"
             android:label="@string/title_activity_main3"

@@ -8,36 +8,13 @@
     tools:context=".Main11Activity"
     tools:showIn="@layout/activity_main11">
 
-    <EditText
-        android:id="@+id/editText24"
-        android:layout_width="230dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="156dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="date"
-        android:text="12-08-1984"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView43"
         android:layout_width="43dp"
         android:layout_height="23dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="152dp"
         android:text="Nome:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="208dp"
-        android:layout_marginTop="324dp"
-        android:text="Nº Utente:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,11 +23,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="8dp"
         android:text="Data de Nascimento:"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -59,162 +36,22 @@
         android:layout_width="61dp"
         android:layout_height="23dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="272dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="8dp"
         android:text="E-mail:"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText25"
-        android:layout_width="65dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="212dp"
-        android:layout_marginEnd="4dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="B-"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText26"
-        android:layout_width="355dp"
-        android:layout_height="132dp"
-        android:layout_marginTop="472dp"
-        android:layout_marginEnd="20dp"
-        android:editable="false"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="nada a acrescentar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:id="@+id/scrollView2111"
-        android:layout_width="389dp"
-        android:layout_height="153dp"
-        android:layout_marginBottom="56dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
-    <EditText
-        android:id="@+id/editText27"
-        android:layout_width="317dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="108dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:saveEnabled="false"
-        android:text="Joana Albuquerque"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView47"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="324dp"
-        android:text="NIF:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText28"
-        android:layout_width="278dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="376dp"
-        android:editable="false"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="amendoins"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.857"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText29"
-        android:layout_width="121dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="312dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="number"
-        android:soundEffectsEnabled="true"
-        android:text="987654320"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText30"
-        android:layout_width="138dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="208dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="phone"
-        android:text="915888625"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textView53" />
 
     <TextView
         android:id="@+id/textView48"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginTop="464dp"
         android:text="Informações adicionais:"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText31"
-        android:layout_width="121dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="324dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="number"
-        android:soundEffectsEnabled="true"
-        android:text="234567890"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.196"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editText32"
-        android:layout_width="312dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="12dp"
-        android:editable="false"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="joanaalbuquerque@gmail.com"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -222,11 +59,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="252dp"
         android:layout_marginEnd="8dp"
         android:text="Contacto:"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.006"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -246,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="17dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="376dp"
+        android:layout_marginTop="412dp"
         android:text="Alergias:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -256,9 +93,85 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="240dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="252dp"
         android:text="T. Sanguineo:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="300dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="152dp"
+        android:text="Joana Albuquerque"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView43"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="44dp"
+        android:text="12-08-1984"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toTopOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="51dp"
+        android:text="915888625"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView49"
+        app:layout_constraintTop_toTopOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="56dp"
+        android:text="B-"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView51"
+        app:layout_constraintTop_toTopOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="56dp"
+        android:text="joanaalbuquerque@gmail.com"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toTopOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="101dp"
+        android:text="Amendoins"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView50"
+        app:layout_constraintTop_toTopOf="@+id/textView56" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="52dp"
+        android:text="Nada a acrescentar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView48" />
 </android.support.constraint.ConstraintLayout>

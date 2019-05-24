@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".DarTarefa"
-    tools:showIn="@layout/activity_dar_tarefa">
+    tools:context=".Main12Activity"
+    tools:showIn="@layout/activity_main12">
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton13"
+        android:id="@+id/floatingActionButton15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -20,7 +20,7 @@
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <TextView
-        android:id="@+id/textView40"
+        android:id="@+id/textView57"
         android:layout_width="153dp"
         android:layout_height="24dp"
         android:layout_marginStart="40dp"
@@ -29,27 +29,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText23"
-        android:layout_width="301dp"
-        android:layout_height="144dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="240dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="231dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="264dp"
+        android:text="Deve ser administrado uma vacina de tetato à paciente Joana Albuquerque."
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="161dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="596dp"
-        android:layout_marginEnd="8dp"
-        android:text="Submeter tarefa"
+        android:id="@+id/button"
+        android:layout_width="175dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="548dp"
+        android:text="MArcar como feito"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
