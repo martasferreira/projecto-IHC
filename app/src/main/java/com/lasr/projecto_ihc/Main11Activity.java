@@ -10,20 +10,21 @@ import android.view.View;
 
 import com.lasr.projecto_ihc.ui.login.LoginActivity;
 
-public class ShowActivity extends AppCompatActivity {
+public class Main11Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show);
+        setContentView(R.layout.activity_main11);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton btn = (FloatingActionButton) findViewById(R.id.floatingActionButton12);
+
+        FloatingActionButton btn = (FloatingActionButton) findViewById(R.id.floatingActionButton14);
 
         btn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(ShowActivity.this, Main7Activity.class);
+                Intent it = new Intent(Main11Activity.this, Main8Activity.class);
                 startActivity(it);
             }
         });

@@ -29,5 +29,14 @@ public class VistaConsulta extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
+        Button button7 = (Button) findViewById(R.id.button7);
+
+        button7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(VistaConsulta.this, Main7Activity.class);
+                startActivity(it);
+            }
+        });
     }
 }

@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.lasr.projecto_ihc.ui.login.LoginActivity;
@@ -29,6 +30,15 @@ public class Main8Activity extends AppCompatActivity {
         btnlogout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent(Main8Activity.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });
+
+        ImageButton procurar  = (ImageButton) findViewById(R.id.imageButton);
+
+        procurar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main8Activity.this, Main11Activity.class);
                 startActivity(it);
             }
         });
@@ -64,6 +74,13 @@ public class Main8Activity extends AppCompatActivity {
         dados.add("Tarefa 4");
         dados.add("Tarefa 5");
         dados.add("Tarefa 6");
+        dados.add("Tarefa 7");
+        dados.add("Tarefa 8");
+        dados.add("Tarefa 9");
+        dados.add("Tarefa 10");
+        dados.add("Tarefa 11");
+        dados.add("Tarefa 12");
+        dados.add("Tarefa 13");
 
 
         return dados;

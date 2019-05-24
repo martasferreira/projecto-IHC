@@ -94,6 +94,7 @@
     <string name="title_tarefa_list">Tarefas</string>
     <string name="title_tarefa_detail">Tarefa Detail</string>
     <string name="title_activity_main10">Main10Activity</string>
+    <string name="title_activity_main11">Main11Activity</string>
 
 
 </resources>
