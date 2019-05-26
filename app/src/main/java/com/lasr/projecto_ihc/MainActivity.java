@@ -1,5 +1,6 @@
 package com.lasr.projecto_ihc;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,6 +13,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.lasr.projecto_ihc.ui.login.LoginActivity;
 
@@ -50,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent it = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(it);
+
+                Context context = getApplicationContext();
+                CharSequence text = "Logout successful!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
             }
         });
 
