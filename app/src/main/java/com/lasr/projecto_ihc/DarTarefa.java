@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
+
 public class DarTarefa extends AppCompatActivity {
 
     @Override
@@ -21,11 +23,20 @@ public class DarTarefa extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton13);
+        FloatingActionButton btnprevious = (FloatingActionButton) findViewById(R.id.floatingActionButton13);
+
+        btnprevious.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(DarTarefa.this, VistaConsulta.class);
+                startActivity(it);
+            }
+        });
+
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
 
         btnlogout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(DarTarefa.this, VistaConsulta.class);
+                Intent it = new Intent(DarTarefa.this, LoginActivity.class);
                 startActivity(it);
             }
         });

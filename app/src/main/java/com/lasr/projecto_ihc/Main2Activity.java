@@ -20,11 +20,11 @@ public class Main2Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton3);
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
 
         btnlogout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(Main2Activity.this, MainActivity.class);
+                Intent it = new Intent(Main2Activity.this, LoginActivity.class);
                 startActivity(it);
             }
         });

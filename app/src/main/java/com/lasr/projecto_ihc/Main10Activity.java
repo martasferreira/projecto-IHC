@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
 
+import com.lasr.projecto_ihc.ui.login.LoginActivity;
+
 import java.util.ArrayList;
 
 public class Main10Activity extends AppCompatActivity {
@@ -25,7 +27,14 @@ public class Main10Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
 
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main10Activity.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });
 
 
         ListView lista = (ListView) findViewById(R.id.disponibilidade);

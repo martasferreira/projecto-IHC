@@ -21,15 +21,14 @@ public class Main3Activity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton2);
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
 
         btnlogout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(Main3Activity.this, MainActivity.class);
+                Intent it = new Intent(Main3Activity.this, LoginActivity.class);
                 startActivity(it);
             }
         });
-
         Button button2 =(Button) findViewById(R.id.button2);
 
         button2.setOnClickListener(new View.OnClickListener() {

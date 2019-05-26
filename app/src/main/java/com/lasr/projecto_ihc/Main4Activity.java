@@ -27,9 +27,9 @@ public class Main4Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton4);
+        FloatingActionButton btnPrevious = (FloatingActionButton) findViewById(R.id.floatingActionButton4);
 
-        btnlogout.setOnClickListener(new View.OnClickListener() {
+        btnPrevious.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent(Main4Activity.this, MainActivity.class);
                 startActivity(it);
@@ -75,7 +75,14 @@ public class Main4Activity extends AppCompatActivity {
                 startActivity(it);
             }
         });
-    }
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main4Activity.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });   }
 
    }
 

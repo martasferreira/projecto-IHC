@@ -24,11 +24,20 @@ public class Main7Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton10);
+        FloatingActionButton btnprevious = (FloatingActionButton) findViewById(R.id.floatingActionButton10);
+
+        btnprevious.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main7Activity.this, VistaConsulta.class);
+                startActivity(it);
+            }
+        });
+
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
 
         btnlogout.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent it = new Intent(Main7Activity.this, VistaConsulta.class);
+                Intent it = new Intent(Main7Activity.this, LoginActivity.class);
                 startActivity(it);
             }
         });

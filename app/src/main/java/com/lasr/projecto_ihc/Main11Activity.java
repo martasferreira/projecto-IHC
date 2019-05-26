@@ -29,6 +29,15 @@ public class Main11Activity extends AppCompatActivity {
             }
         });
 
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main11Activity.this, LoginActivity.class);
+                startActivity(it);
+            }
+        });
+
     }
 
 }
