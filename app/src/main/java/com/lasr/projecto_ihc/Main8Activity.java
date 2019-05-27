@@ -1,5 +1,6 @@
 package com.lasr.projecto_ihc;
 
+import android.R.layout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -69,17 +70,26 @@ public class Main8Activity extends AppCompatActivity {
 
                 Intent intent = new Intent(Main8Activity.this, Main12Activity.class);
                 startActivity(intent);
+                ArrayList<String> tarefas = preencherDados1();
 
+                ListView lista = (ListView) findViewById(R.id.tarefas);
+            }
+
+            private ArrayList<String> preencherDados1() {
+                ArrayList<String> dados = preencherDados();
+                dados.remove(a);
+
+                return dados;
             }
         });
 
     }
 
-
+    public String a = "Tarefa 1";
     private ArrayList<String> preencherDados() {
 
         ArrayList<String> dados = new ArrayList<String>();
-        dados.add("Tarefa 1");
+        dados.add(a);
         dados.add("Tarefa 2");
         dados.add("Tarefa 3");
         dados.add("Tarefa 4");

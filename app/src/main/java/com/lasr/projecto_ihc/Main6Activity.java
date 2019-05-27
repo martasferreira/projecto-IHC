@@ -37,7 +37,7 @@ public class Main6Activity extends AppCompatActivity {
 
         FloatingActionButton back = (FloatingActionButton) findViewById(R.id.floatingActionButton7);
 
-        btnlogout.setOnClickListener(new View.OnClickListener() {
+        back.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent(Main6Activity.this, Main5Activity.class);
                 startActivity(it);

@@ -27,6 +27,15 @@ public class Main12Activity extends AppCompatActivity {
             }
         });
 
+
+        FloatingActionButton btn1 = (FloatingActionButton) findViewById(R.id.floatingActionButton15);
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main12Activity.this, Main8Activity.class);
+                startActivity(it);
+            }
+        });
     }
 
 }
