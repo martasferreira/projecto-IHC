@@ -50,7 +50,12 @@
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Main7Activity"
+        android:name=".Main7Activity"
+        android:label=""
+        android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Main12Activity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
