@@ -1,5 +1,6 @@
 package com.lasr.projecto_ihc;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.lasr.projecto_ihc.ui.login.LoginActivity;
 
@@ -24,12 +26,28 @@ public class Main7Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton10);
+        FloatingActionButton btnprevious = (FloatingActionButton) findViewById(R.id.floatingActionButton10);
 
-        btnlogout.setOnClickListener(new View.OnClickListener() {
+        btnprevious.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent(Main7Activity.this, VistaConsulta.class);
                 startActivity(it);
+            }
+        });
+
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main7Activity.this, LoginActivity.class);
+                startActivity(it);
+
+                Context context = getApplicationContext();
+                CharSequence text = "Logout successful!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
             }
         });
 

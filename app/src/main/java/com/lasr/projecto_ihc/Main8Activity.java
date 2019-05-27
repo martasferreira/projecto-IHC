@@ -1,6 +1,6 @@
 package com.lasr.projecto_ihc;
 
-import android.R.layout;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.lasr.projecto_ihc.ui.login.LoginActivity;
 
@@ -33,6 +34,13 @@ public class Main8Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent it = new Intent(Main8Activity.this, LoginActivity.class);
                 startActivity(it);
+
+                Context context = getApplicationContext();
+                CharSequence text = "Logout successful!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
             }
         });
 
@@ -70,26 +78,17 @@ public class Main8Activity extends AppCompatActivity {
 
                 Intent intent = new Intent(Main8Activity.this, Main12Activity.class);
                 startActivity(intent);
-                ArrayList<String> tarefas = preencherDados1();
 
-                ListView lista = (ListView) findViewById(R.id.tarefas);
-            }
-
-            private ArrayList<String> preencherDados1() {
-                ArrayList<String> dados = preencherDados();
-                dados.remove(a);
-
-                return dados;
             }
         });
 
     }
 
-    public String a = "Tarefa 1";
+
     private ArrayList<String> preencherDados() {
 
         ArrayList<String> dados = new ArrayList<String>();
-        dados.add(a);
+        dados.add("Tarefa 1");
         dados.add("Tarefa 2");
         dados.add("Tarefa 3");
         dados.add("Tarefa 4");

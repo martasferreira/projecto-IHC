@@ -1,5 +1,6 @@
 package com.lasr.projecto_ihc;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -12,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.lasr.projecto_ihc.ui.login.LoginActivity;
 
@@ -27,9 +29,9 @@ public class Main4Activity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton4);
+        FloatingActionButton btnPrevious = (FloatingActionButton) findViewById(R.id.floatingActionButton4);
 
-        btnlogout.setOnClickListener(new View.OnClickListener() {
+        btnPrevious.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent it = new Intent(Main4Activity.this, MainActivity.class);
                 startActivity(it);
@@ -75,7 +77,21 @@ public class Main4Activity extends AppCompatActivity {
                 startActivity(it);
             }
         });
-    }
+        FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
+
+        btnlogout.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(Main4Activity.this, LoginActivity.class);
+                startActivity(it);
+
+                Context context = getApplicationContext();
+                CharSequence text = "Logout successful!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+        });   }
 
    }
 
