@@ -28,6 +28,13 @@ public class Main12Activity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent it = new Intent(Main12Activity.this, Main8Activity.class);
                 startActivity(it);
+
+                Context context = getApplicationContext();
+                CharSequence text = "Tarefa concluida!!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
             }
         });
 
