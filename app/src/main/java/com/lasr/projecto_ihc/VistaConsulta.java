@@ -41,6 +41,16 @@ public class VistaConsulta extends AppCompatActivity {
             }
         });
 
+        Button button10 = (Button) findViewById(R.id.button10);
+
+        button10.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(VistaConsulta.this, Main6Activity.class);
+                startActivity(it);
+            }
+        });
+
+
         FloatingActionButton btnlogout = (FloatingActionButton) findViewById(R.id.floatingActionButton17);
 
         btnlogout.setOnClickListener(new View.OnClickListener() {
