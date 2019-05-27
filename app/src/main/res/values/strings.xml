@@ -19,6 +19,14 @@
         <item>Dr. Gonçalo Faria</item>
     </string-array>
 
+    <string-array name="items">
+        <item>"Joana Silva"</item>
+        <item>"Alberto Dias"</item>
+        <item>"Rita Soares"</item>
+        <item>"Jorge Aguiar"</item>
+        <item>"Amélia Alcides"</item>
+    </string-array>
+
     <string-array name="days">
         <item>1</item>
         <item>2</item>
@@ -50,6 +58,7 @@
         <item>28</item>
         <item>29</item>
         <item>30</item>
+        <item>31</item>
 
     </string-array>
 
@@ -57,7 +66,6 @@
         <item>Jan</item>
         <item>Fev</item>
         <item>Mar</item>
-        <item>Abr</item>
         <item>Abr</item>
         <item>Mai</item>
         <item>Jun</item>

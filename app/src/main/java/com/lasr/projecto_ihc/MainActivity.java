@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         editText.setAdapter(adapter);
 
 
-        ImageButton btnAdd =(ImageButton) findViewById(R.id.buttonAdd);
+        Button btnAdd =(Button) findViewById(R.id.buttonAdd);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
