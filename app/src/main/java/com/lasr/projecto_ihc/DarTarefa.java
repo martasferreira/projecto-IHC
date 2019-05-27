@@ -57,6 +57,13 @@ public class DarTarefa extends AppCompatActivity {
             public void onClick(View v) {
                 Intent it = new Intent(DarTarefa.this, VistaConsulta.class);
                 startActivity(it);
+
+                Context context = getApplicationContext();
+                CharSequence text = "Tarefa submetida!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
             }
         });
 
